@@ -1,0 +1,10 @@
+,Models,Accuracies,Type Of Wine,Sampling Type
+2,KNN,0.5789473684210527,White,Random Sample Three Categories
+5,KNN,0.6578947368421053,Red,Random Sample Three Categories
+8,KNN,0.4473684210526316,Red + White,Random Sample Three Categories
+1,Random Forest,0.6842105263157895,White,Random Sample Three Categories
+4,Random Forest,0.6842105263157895,Red,Random Sample Three Categories
+7,Random Forest,0.47368421052631576,Red + White,Random Sample Three Categories
+0,SVC,0.6052631578947368,White,Random Sample Three Categories
+3,SVC,0.6578947368421053,Red,Random Sample Three Categories
+6,SVC,0.5263157894736842,Red + White,Random Sample Three Categories
