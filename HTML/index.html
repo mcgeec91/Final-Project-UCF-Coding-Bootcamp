@@ -20,11 +20,11 @@
 
 <!-- NAVBAR
 ================================================== -->
-  <body>
+<body>
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-default navbar-static-top" style="background-color: maroon">
+        <nav class="navbar navbar-inverse navbar-static-top" style="background-color: maroon">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,9 +38,30 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="analytics.html">Analytics</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Data Visualization</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="redviz.html">Red Wine</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="whiteviz.html">White Wine</a></li>
+                  </ul>
+                  </li>
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analytics<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="redanalytics.html">Red Wine</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="whiteanalytics.html">White Wine</a></li>
+                  </ul>
+                  </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="models.html">Models</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="accuracies.html">Accuracies</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -109,22 +130,22 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/anthony.jpg" alt="anthony" width="140" height="140">
+          <img class="img-circle" src="../images/anthony.jpg" alt="anthony" width="140" height="140">
           <h2>Anthony Suitto</h2>
           <p>Data Analyst</p>
-          <img class="Linkedin" src="images/Linkedin-full-logo.png" alt="linkedin" width="80" height="20">
+          <img class="Linkedin" src="../images/Linkedin-full-logo.png" alt="linkedin" width="80" height="20">
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/chris.jpg" alt="chris" width="140" height="140">
+          <img class="img-circle" src="../images/chris.jpg" alt="chris" width="140" height="140">
           <h2>Chris McGee</h2>
           <p>Data Analyst</p>
-          <img class="Linkedin" src="images/Linkedin-full-logo.png" alt="linkedin" width="80" height="20">
+          <img class="Linkedin" src="../images/Linkedin-full-logo.png" alt="linkedin" width="80" height="20">
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/jessica.jpg" alt="jessica" width="140" height="140">
+          <img class="img-circle" src="../images/jessica.jpg" alt="jessica" width="140" height="140">
           <h2>Jessica Schielka</h2>
           <p>Data Analyst</p>
-          <img class="Linkedin" src="images/Linkedin-full-logo.png" alt="linkedin" width="80" height="20">
+          <img class="Linkedin" src="../images/Linkedin-full-logo.png" alt="linkedin" width="80" height="20">
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -143,9 +164,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  
   </body>
 </html>
 
