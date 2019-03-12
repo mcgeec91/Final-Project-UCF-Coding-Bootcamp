@@ -8,22 +8,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
     <title>AIWT</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
   </head>
-
+  <!-- javascript library -->
+  <script src="sorttable.js"></script>
 <!-- NAVBAR
 ================================================== -->
 <body>
     <div class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top" style="background-color: maroon">
           <div class="container">
             <div class="navbar-header">
@@ -37,7 +34,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown"><a href="index.html">Home</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization<span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -54,35 +51,244 @@
                         <li><a href="whiteanalytics.html">White Wine</a></li>
                   </ul>
                   </li>
-                <li class="dropdown">
+                <li class="active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="models.html">Models</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="accuracies.html">Accuracies</a></li>
+                            <li class="disabled"><a href="#">Models</a></li>
+                            <li><a href="threecat.html">Three Category</a></li>
+                            <li><a href="twocat.html">Two Category</a></li>
+                            <li><a href="resample.html">Re-Sample</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="accuracies.html">Accuracies</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-
       </div>
     </div>
-
-
 <!-- DASHBOARD -->
-<!-- INSERT TABLE HTML HERE -->
-
-
+<!-- Data Table -->
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+          <h1><strong><class="mt-0">Data</class></strong></h1>
+              <hr>
+          <h4><class="mt-0">Accuracy results from testing KNN, Random Forest, and SVC models on each wine type using all sampling methods.</class></h4>
+          <br>
+      
+<table class="sortable table table-striped table-bordered table-hover table-condensed">
+<thead>
+<tr class="header">
+<th bgcolor=maroon class='medium'><font color=white>Index</font></th>
+<th bgcolor=maroon class='medium'><font color=white>Models</font></th>
+<th bgcolor=maroon class='medium'><font color=white>Accuracies</font></th>
+<th bgcolor=maroon class='medium'><font color=white>Type of Wine</font></th>
+<th bgcolor=maroon class='medium'><font color=white>Sampling Type</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>0</td>
+<td>KNN</td>
+<td>0.797959</td>
+<td>White</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>1</td>
+<td>KNN</td>
+<td>0.859375</td>
+<td>Red</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>2</td>
+<td>KNN</td>
+<td>0.813077</td>
+<td>Red + White</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>3</td>
+<td>Random Forest</td>
+<td>0.858163</td>
+<td>White</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>4</td>
+<td>Random Forest</td>
+<td>0.921875</td>
+<td>Red</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>5</td>
+<td>Random Forest</td>
+<td>0.848462</td>
+<td>Red + White</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>6</td>
+<td>SVC</td>
+<td>0.804082</td>
+<td>White</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>7</td>
+<td>SVC</td>
+<td>0.884375</td>
+<td>Red</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>8</td>
+<td>SVC</td>
+<td>0.793077</td>
+<td>Red + White</td>
+<td>Three Categories</td>
+</tr>
+<tr>
+  <td>9</td>
+<td>KNN</td>
+<td>0.526316</td>
+<td>White</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+  <td>10</td>
+<td>KNN</td>
+<td>0.657895</td>
+<td>Red</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+  <td>11</td>
+<td>KNN</td>
+<td>0.394737</td>
+<td>Red + White</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+  <td>12</td>
+<td>Random Forest</td>
+<td>0.552632</td>
+<td>White</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+  <td>13</td>
+<td>Random Forest</td>
+<td>0.657895</td>
+<td>Red</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+  <td>14</td>
+<td>Random Forest</td>
+<td>0.552632</td>
+<td>Red + White</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+  <td>15</td>
+<td>SVC</td>
+<td>0.631579</td>
+<td>White</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+<td>16</td>
+<td>SVC</td>
+<td>0.657895</td>
+<td>Red</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+<td>17</td>
+<td>SVC</td>
+<td>0.605263</td>
+<td>Red + White</td>
+<td>Random Sample Three Categories</td>
+</tr>
+<tr>
+<td>18</td>
+<td>KNN</td>
+<td>0.767347</td>
+<td>White</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>19</td>
+<td>KNN</td>
+<td>0.690625</td>
+<td>Red</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>20</td>
+<td>KNN</td>
+<td>0.775385</td>
+<td>Red + White</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Random Forest</td>
+<td>0.839796</td>
+<td>White</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Random Forest</td>
+<td>0.800000</td>
+<td>Red</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Random Forest</td>
+<td>0.845385</td>
+<td>Red + White</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>24</td>
+<td>SVC</td>
+<td>0.792857</td>
+<td>White</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>25</td>
+<td>SVC</td>
+<td>0.725000</td>
+<td>Red</td>
+<td>Two Categories</td>
+</tr>
+<tr>
+<td>26</td>
+<td>SVC</td>
+<td>0.778462</td>
+<td>Red + White</td>
+<td>Two Categories</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
  <!-- FOOTER -->
  <footer>
         <p class="text-center">&copy; 2019 AI Wine Tasters, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
-
     </div><!-- /.container -->
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
