@@ -3,7 +3,7 @@
 * -------------------------------------------------- */
 
 body {
-    padding-bottom: 10px;
+    padding-bottom: 80px;
     color: #5a5a5a;
   }
   
@@ -28,8 +28,8 @@ body {
   .navbar-wrapper .navbar {
     padding-right: 15px;
     padding-left: 15px;
-    color: white;
   }
+
   .navbar-wrapper .navbar .container {
     width: auto;
   }
@@ -48,6 +48,11 @@ body {
     padding-top: 80px !important;
     padding-right: 140px !important;
     padding-left: 140px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .header {
+    cursor: pointer;
   }
   
   
