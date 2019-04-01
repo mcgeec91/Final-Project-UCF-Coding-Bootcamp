@@ -15,3 +15,6 @@ ML (Sci-Kit Learn), Python Pandas, Tableau, Front-End (HTML, CSS, Bootstrap)
 
 Link to the dataset:
 https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 
+
+
+After thorough analysis, we were able to prove that Red and White wine have distinct characteristics that produce the best quality wines.  Another conclusion that was made was when all wines can be combined into a single dataset, the machine learning  was able to produce accurate results thus proving all wines in general have a distribution of sugar, sulphates, citric acid levels (and etc.) that will produce a highly rated. But, this method not as precise as the Red and White individually and accurate results can be attributed to having the most data to look at for the machine learning to be effective. 
